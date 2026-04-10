@@ -1,5 +1,6 @@
-# 🚀 OpenWrt AX6600 / IPQ60xx 云编译固件
-（仅支持京东云雅典娜 AX6600）
+# 🚀 OpenWrt AX6600 / IPQ60xx 云编译固件 
+⭐ [👉 进入项目主页](https://github.com/ones20250/Openwrt-AX6600) （仅支持京东云雅典娜 AX6600）
+
 
 一个基于 GitHub Actions 的 OpenWrt 自动编译项目，支持 QUALCOMMAX（IPQ6010）系列设备。
 
@@ -16,8 +17,7 @@
 ---
 
 ## 📦 固件下载
-
-👉 在 **Releases** 页面获取最新固件  
+🚀 [👉 最新固件下载（Releases）](https://github.com/ones20250/Openwrt-AX6600/releases/latest)  
 
 ---
 
