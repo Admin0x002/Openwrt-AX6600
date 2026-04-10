@@ -23,8 +23,8 @@
 
 ## 🛠️ 刷机教程
 
-👉 完整刷机图文教程（推荐新手参考）  
-[点击查看教程](https://blog.waynecommand.com/post/athena-re-cs-02.html)
+👉 完整刷机图文教程（推荐新手参考） [点击查看教程](https://blog.waynecommand.com/post/athena-re-cs-02.html)
+
 
 1. 旧版本固件开启 SSH  
 2. 备份分区（SSH 备份 / TTL 备份）  
