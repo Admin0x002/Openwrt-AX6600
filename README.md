@@ -3,7 +3,7 @@ OpenWrt / AX6600 / JDCloud RE-CS-02 / IPQ6010 / NSS acceleration / firmware / ro
 
 [👉 进入项目主页](https://github.com/ones20250/Openwrt-AX6600) 适配京东云雅典娜 AX6600（JDCloud RE-CS-02）
 
-一个基于 GitHub Actions 的 OpenWrt 自动编译项目，支持 QUALCOMMAX（IPQ6010）系列设备。
+一个基于 GitHub Actions 的 OpenWrt 自动编译项目，支持 QUALCOMMAX（IPQ6010）设备。
 
 ---
 
