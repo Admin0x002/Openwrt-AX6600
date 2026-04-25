@@ -40,6 +40,9 @@ on:
       WRT_TEST:
         required: false
         type: string
+      WRT_SSH:
+        required: false
+        type: boolean
 
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -55,6 +58,7 @@ env:
   WRT_SOURCE: ${{inputs.WRT_SOURCE}}
   WRT_PACKAGE: ${{inputs.WRT_PACKAGE}}
   WRT_TEST: ${{inputs.WRT_TEST}}
+  WRT_SSH: ${{inputs.WRT_SSH}}
 
 jobs:
   core:
@@ -176,6 +180,12 @@ jobs:
           $GITHUB_WORKSPACE/Scripts/Settings.sh
 
           make defconfig -j$(nproc) && make clean -j$(nproc)
+
+      - name: SSH Session (Interactive Config)
+        if: env.WRT_SSH == 'true'
+        uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: true
 
       - name: Download Packages
         if: env.WRT_TEST != 'true'

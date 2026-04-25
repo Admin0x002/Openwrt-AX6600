@@ -20,6 +20,11 @@ on:
         default: 'false'
         required: false
         type: boolean
+      SSH:
+        description: '开启 SSH 远程交互配置 (暂停编译以便 make menuconfig)'
+        default: 'false'
+        required: false
+        type: boolean
 
 #CI权限
 permissions: write-all
@@ -65,3 +70,5 @@ jobs:
       WRT_PACKAGE: ${{inputs.PACKAGE}}
       #仅输出配置文件
       WRT_TEST: ${{inputs.TEST}}
+      #开启SSH交互
+      WRT_SSH: ${{inputs.SSH}}

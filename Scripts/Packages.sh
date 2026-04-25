@@ -117,7 +117,17 @@ UPDATE_VERSION() {
 		fi
 	done
 }
-
+#更新软件包版本
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 #UPDATE_VERSION "sing-box"
 #UPDATE_VERSION "tailscale"
+
+# ==========================================
+# 插件拉取与系统核心设置
+# ==========================================
+
+# 1. Argon Theme (使用最新版，适配新版 LuCI)
+# 移除 feeds 中的旧版本（如果有），强制使用 Jerrykuku 最新版
+rm -rf ./feeds/luci/themes/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-theme-argon.git ./package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config.git ./package/luci-app-argon-config
